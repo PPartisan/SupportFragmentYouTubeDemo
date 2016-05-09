@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements YouTubePlayer.OnI
             getSupportFragmentManager().beginTransaction().add(R.id.youtube_fragment, frag).commit();
         }
 
+        //Requires Developer Key to work. DeveloperKey.class file omitted
         frag.initialize(DeveloperKey.KEY, this);
 
     }
